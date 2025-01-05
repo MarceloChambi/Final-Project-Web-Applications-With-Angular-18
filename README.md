@@ -27,7 +27,7 @@ Indicador de carga para mejorar la experiencia del usuario mientras se consume e
 Chuck Norris API: https://api.chucknorris.io
 Endpoint: https://api.chucknorris.io/jokes/random
 
-Este endpoint devuelve un chiste aleatorio en formato JSON con la estructura: json
+Este endpoint devuelve un chiste aleatorio en formato JSON con la estructura:
 ```json
 {
   "icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
