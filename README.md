@@ -23,7 +23,7 @@ Validación para mostrar un mensaje de error en caso de que el endpoint no esté
 Spinner:
 Indicador de carga para mejorar la experiencia del usuario mientras se consume el API.
 
-##API Utilizada
+## API Utilizada
 Chuck Norris API: https://api.chucknorris.io
 Endpoint: https://api.chucknorris.io/jokes/random
 
