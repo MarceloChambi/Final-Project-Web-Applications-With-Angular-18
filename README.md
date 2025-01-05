@@ -5,7 +5,7 @@ Este repositorio contiene el desarrollo del proyecto final para el curso de Angu
 Componentes Standalone:
 + Navbar: Menú de navegación con rutas a Home y ConsumoEndPoint.
 + Dashboard: Muestra el consumo del endpoint y un spinner de carga mientras se procesan las solicitudes.
-+Footer: Componente estilizado con CSS personalizado.
++ Footer: Componente estilizado con CSS personalizado.
 
 Modelo:
 Modelo basado en una interface que valida la estructura del chiste obtenido desde la API de Chuck Norris.
