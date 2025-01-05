@@ -1,0 +1,27 @@
+<main>
+  <p-toast [breakpoints]="{ '920px': { width: '100%', right: '0', left: '0' } }"></p-toast>
+
+  <p-card [style]="{ width: '25rem', minHeight: '38rem', overflow: 'hidden' }">
+    @if ( isLoading ) {
+      <div class="spinner-container">
+        <p-progressSpinner></p-progressSpinner>
+      </div>
+    }
+    @else if (!isLoading && jokeFound) {
+      <img alt="Card" class="w-full" [src]="joke?.icon_url" />
+      <h3 class="my-1 text-white-alpha-70">Chuck Norris</h3>
+      <h4 class="mt-1 text-white-alpha-50">Joke</h4>
+      <p>{{ joke?.value }}</p>
+    }
+    @else if (!isLoading && !jokeFound) {
+      <img alt="Card" class="w-full" src="https://c0.klipartz.com/pngpicture/186/90/gratis-png-hombre-sosteniendo-su-sombrero-chuck-norris-hechos-cinturon-negro-artes-marciales-chuck-norris-thumbnail.png" />
+      <h3 class="my-1 text-white-alpha-70">Chuck Norris</h3>
+      <h4 class="mt-1 text-white-alpha-50">Joke</h4>
+      <p>Chuck Norris hasn't told any jokes yet.</p>
+    }
+
+    <div class="flex gap-4 mt-1">
+      <p-button label="Random Joke" (click)="getJoke()" class="w-full" [outlined]="true" styleClass="w-full" icon="pi pi-search"></p-button>
+    </div>
+  </p-card>
+</main>
