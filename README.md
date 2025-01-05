@@ -28,9 +28,11 @@ Chuck Norris API: https://api.chucknorris.io
 Endpoint: https://api.chucknorris.io/jokes/random
 
 Este endpoint devuelve un chiste aleatorio en formato JSON con la estructura: json
+```json
 {
   "icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
   "id": "abc123",
   "url": "",
   "value": "Chuck Norris can divide by zero."
 }
+
