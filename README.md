@@ -1,59 +1,36 @@
-# FinalExamCURS000225
+# Final-Project-Web-Applications-With-Angular-18
+Este repositorio contiene el desarrollo del proyecto final para el curso de Angular 18, impartido por Galaxy Training. El proyecto se centra en la creación de un aplicativo Angular que consume un endpoint de la API de Chuck Norris (https://api.chucknorris.io/), siguiendo las mejores prácticas de desarrollo de componentes standalone y organización en Angular.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+## Funcionalidades Implementadas
+Componentes Standalone:
++ Navbar: Menú de navegación con rutas a Home y ConsumoEndPoint.
++ Dashboard: Muestra el consumo del endpoint y un spinner de carga mientras se procesan las solicitudes.
++Footer: Componente estilizado con CSS personalizado.
 
-## Development server
+Modelo:
+Modelo basado en una interface que valida la estructura del chiste obtenido desde la API de Chuck Norris.
 
-To start a local development server, run:
+Servicio:
+Clase de servicio para consumir el endpoint https://api.chucknorris.io/jokes/random utilizando un método HTTP GET.
 
-```bash
-ng serve
-```
+Rutas:
++ Home: Página principal del proyecto.
++ ConsumoEndPoint: Página que muestra el consumo del endpoint seleccionado.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Validación y Manejo de Errores:
+Validación para mostrar un mensaje de error en caso de que el endpoint no esté disponible.
 
-## Code scaffolding
+Spinner:
+Indicador de carga para mejorar la experiencia del usuario mientras se consume el API.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+##API Utilizada
+Chuck Norris API: https://api.chucknorris.io
+Endpoint: https://api.chucknorris.io/jokes/random
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este endpoint devuelve un chiste aleatorio en formato JSON con la estructura: json
+{
+  "icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+  "id": "abc123",
+  "url": "",
+  "value": "Chuck Norris can divide by zero."
+}
